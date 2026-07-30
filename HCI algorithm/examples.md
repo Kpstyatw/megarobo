@@ -357,3 +357,4 @@ def manders_coefficients(ch1, ch2, mask, thresh1, thresh2):
 | 背景扣除（rolling ball）、去噪、CLAHE/对比度增强 | 拼接完成**之后**，在最终的大图上做 | 这类操作通常需要较大的空间统计信息（比如背景估计半径），在拼接后的完整视野上做效果更准确；而且只需处理一次，比对每个tile重复处理更省算力，也能避免拼接缝处理不一致造成的接缝伪影 |
 
 ## 推荐流程顺序
+![alt text](hcs_pipeline_order.png)
